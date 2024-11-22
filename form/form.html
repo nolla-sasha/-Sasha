@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Application Form</h2>
+        <form action="submit.php" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="gender">Gender:</label>
+            
+                    <input type="radio" name="gender" value="male">Male</option>
+                    <input type="radio" name="gender" value="female">Female</option>
+                    
+                
+
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" required><br><br>
+
+                <label for="address">Home Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="contactNumber">Contact Number:</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Parent/Guardian Information</legend>
+                <label for="parentNames">Full Names of Parents/Guardians:</label>
+                <input type="text" id="parentNames" name="parentNames" required><br><br>
+
+                <label for="relationship">Relationship to Student:</label>
+                <input type="text" id="relationship" name="relationship" required><br><br>
+
+                <label for="parentContactNumbers">Contact Numbers:</label>
+                <input type="tel" id="parentContactNumbers" name="parentContactNumbers" required><br><br>
+
+                <label for="parentEmails">Email Addresses:</label>
+                <input type="email" id="parentEmails" name="parentEmails" required><br><br>
+
+                <label for="occupation">Occupation and Employer:</label>
+                <input type="text" id="occupation" name="occupation" required><br><br>
+
+                <label for="parentAddress">Home Address (if different from student's):</label>
+                <input type="text" id="parentAddress" name="parentAddress"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label for="previousSchools">Previous Schools Attended:</label>
+                <input type="text" id="previousSchools" name="previousSchools" required><br><br>
+
+                <label for="grades">Grades or Classes Completed:</label>
+                <input type="text" id="grades" name="grades" required><br><br>
+
+                <label for="transcripts">Academic Transcripts/Reports:</label>
+                <input type="file" id="transcripts" name="transcripts" required><br><br>
+
+                <label for="activities">Extracurricular Activities:</label>
+                <input type="text" id="activities" name="activities"><br><br>
+
+                <label for="awards">Awards and Honors:</label>
+                <input type="text" id="awards" name="awards"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Medical Information</legend>
+                <label for="allergies">Allergies:</label>
+                <input type="text" id="allergies" name="allergies"><br><br>
+
+                <label for="medications">Current Medications:</label>
+                <input type="text" id="medications" name="medications"><br><br>
+
+                <label for="conditions">Medical Conditions:</label>
+                <input type="text" id="conditions" name="conditions"><br><br>
+
+                <label for="immunizations">Immunization Records:</label>
+                <input type="file" id="immunizations" name="immunizations" required><br><br>
+
+                <label for="emergencyContact">Emergency Contact Details:</label>
+                <input type="text" id="emergencyContact" name="emergencyContact" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Application Details</legend>
+                <label for="grade">Desired Admission Grade/Class:</label>
+                <input type="text" id="grade" name="grade" required><br><br>
+
+                <label for="startDate">Preferred Start Date:</label>
+                <input type="date" id="startDate" name="startDate" required><br><br>
+
+                <label for="reason">Reason for Choosing the School:</label><br>
+                <textarea id="reason" name="reason" rows="5" cols="50"required></textarea><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="hobbies">Hobbies and Interests:</label>
+                <input type="text" id="hobbies" name="hobbies"><br><br>
+
+                <label for="specialNeeds">Special Needs or Accommodations:</label>
+                <input type="text" id="specialNeeds" name="specialNeeds"><br><br>
+            </fieldset>
+            <fieldset>
+                <label> How would you rate our school:</label><br>
+                0<input type="range" name="rating" max="10" min="0">10
+
+
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
